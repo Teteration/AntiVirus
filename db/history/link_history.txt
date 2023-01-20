@@ -1,5 +1,106 @@
-al.com
-bl.com
-mahdi.com
-s.com
-cc.com
+adtidy.orgboomi.comclamav.netadtidy.org
+boomi.com
+clamav.net
+cloudflare.com
+cloudflare-dns.com
+cmdref.net
+adtidy.org
+fillextra.com
+firefox.com
+googleapis.com
+google.com
+gstatic.com
+gvt2.com
+gvt3.com
+in-addr.arpa
+lencr.org
+itre.org
+mozilla.com
+netmeister.org
+notion.so
+oracle.com
+sans.org
+shodan.io
+site24x7.com
+mitre.org
+cloudfront.net
+anydesk.com
+bootstrapcdn.com
+consensu.org
+facebook.com
+githubassets.com
+google-analytics.com
+grammarly.io
+iranleague.ir
+codefi.network
+educative.io
+googleusercontent.com
+grammarly.com
+gravatar.com
+quantcount.com
+quantserve.com
+recaptcha.net
+scikit-learn.org
+serverfault.com
+splunkcloud.com
+sstatic.net
+stackoverflow.com
+tcpdump.org
+tecmint.com
+ad-blocks.com
+appadhoc.com
+exp-tas.com
+github.com
+hc-cdn.cn
+mozilla.net
+hc-cdn.com
+hicloud.com
+huaweicloud.com
+huawei.com
+linkedin.com
+example.orgipv4only.arpamozilla.orgclarity.ms ==> UnSafe
+example.org ==> Safe
+googletagmanager.com ==> UnSafclarity.ms ==> UnSafeexample.org ==> Safe
+googletagmanager.com ==> UnSafe
+hotjar.com ==> UnSafe
+ipv4only.arpa ==> Safe
+mozilla.org ==> Safe
+msecnd.net ==> Safe
+clarity.ms ==> UnSafe
+example.org ==> Safe
+ac.ir
+clarity.ms
+example.org
+inestageram.com
+digicert.com
+fwupd.org
+githubusercontent.com
+goftino.com
+googletagmanager.com
+bibi.com
+com.br
+hotjar.com
+ipv4only.arpa
+amazontrust.com
+builtin.com
+iranlms.org
+jquery.com
+dns.google
+mozilla.org
+sdfgroup.com
+wikipedia.org
+
+flylouisville.com
+virustotal.com
+fontawesome.com
+gitbook.com
+iframe.ly
+ired.team
+polyfill.io
+twitter.com
+a.comamplitude.com
+aamplitude.com
+amplitude.com
+cryptohack.org
+gitbooks.io
+pentest-tools.com

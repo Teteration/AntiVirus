@@ -60,56 +60,30 @@ def Scan_links(link):
 
 # Scan_links("http://digikala.com")
 
-# رسیدیم به اینجا که برای دامنه و آی پی نتیجه درست میده ولی برای یو آر ال
+os.popen("bash ./get_domain.sh")
+with open("./db/domain.txt","r+") as domain_file:
+    for domain in domain_file:
+        with open("./db/history/link_history.txt","r+") as history:
+
+            os.popen("bash ./get_domain.sh")
+            if domain not in history.readlines():
+
+                history.write(domain)
+                domain= domain[:-1]
+                print("scanning for",domain,"==> ", end="")
 
 
+                scan_domain=f"./vt-scan.sh -k b927416058531a36d6cd1f09afe64bea62ded8047e0cd308ec17ac6cc2449782 -d {domain} |jq '.data.attributes.total_votes'"
+                time.sleep(17)
 
-# هر فایل اول باشد هش بشه و دخل فایل دیتا بیس سرچ بشه اگر هشش وجود داشت یعنی قبلا  اسکن شده
-# ساختار دیتا بس باید اینطوری باشه که هش و متغیر عای دی
-# هر لینک باید اول تو قایل هیستوری چک بشه
-
-#step 1 :> all domain in file 
-
-
-
-
-# for i in range(1000000):
-# os.popen("bash ./get_domain.sh")
-#     time.sleep(5)
-
-
-# pay attention to 4 req per min
-# |jq '.data.attributes.total_votes'
-
-with open("./db/domain.txt") as domain_file:
-            # print(history.read())
-
-        # print("bl.com\n" in history.read())
-
-
-        for domain in domain_file:
-            with open("./db/history/link_history.txt") as history:
-                # print(type(history.readlines()))
-                # print("for loop")
-                # print(history.readlines())
-                # print(domain,"and", history.read())
-                # print(domain)
-                # print("next******************")
-                if domain not in history.readlines():
-                    # print(domain[:-1])
-                    domain= domain[:-1]
-                    print("scanning for",domain,"==> ", end="")
-
-                    # print(domain,"is new")
-                    # print(history.read())
-                    scan_domain=f"./vt-scan.sh -k b927416058531a36d6cd1f09afe64bea62ded8047e0cd308ec17ac6cc2449782 -d {domain} |jq '.data.attributes.total_votes'"
-                    # print(scan_domain)
-                    time.sleep(17)
-                    # print(subprocess.getoutput(scan_domain))
-                    safe_mode = "\"harmless\": 0"
-                    safe_mode1 = "\"malicious\": 0"
-                    
-                    if safe_mode1 in subprocess.getoutput(scan_domain):
-                        print("Safe")
-                    else: 
-                        print("Unsafe")
+                safe_mode = "\"harmless\": 0"
+                safe_mode1 = "\"malicious\": 0"
+                
+                if safe_mode1 in subprocess.getoutput(scan_domain):
+                    # fresult = domain + " ==> Safe\n"
+                    # history.write(fresult)
+                    print("Safe")
+                else:
+                    # fresult = domain + " ==> UnSafe\n" 
+                    # history.write(fresult)
+                    print("UnSafe")
