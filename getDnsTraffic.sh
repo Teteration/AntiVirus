@@ -1,0 +1,1 @@
+tcpdump -w dump.pcap -c 10000 port 53
